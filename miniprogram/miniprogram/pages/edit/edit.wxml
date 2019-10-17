@@ -1,0 +1,69 @@
+<!--pages/edit/edit.wxml-->
+<view id="edit">
+  <view class="client_info">
+    <view  class="row_wrap">
+      <view class="txt">
+        <text class="star">* </text>姓名： 
+      </view>
+      <input></input>
+    </view>
+    <view  class="row_wrap">
+      <view class="txt">
+        <text class="star">* </text>性别： 
+      </view>
+      <input></input>
+    </view>
+    <view  class="row_wrap">
+      <view class="txt">
+        <text class="star">* </text>学历： 
+      </view>
+      <input></input>
+    </view>
+    <view  class="row_wrap">
+      <view class="txt">
+        <text class="star">* </text>年限： 
+      </view>
+      <input></input>
+    </view>
+    <view  class="row_wrap">
+      <view class="txt">
+        <text class="star">* </text>地区： 
+      </view>
+      <input></input>
+    </view>
+    <view  class="row_wrap">
+      <view class="txt">
+        <text class="star">* </text>科室： 
+      </view>
+      <input></input>
+    </view>
+    <view  class="row_wrap">
+      <view class="txt">
+        <text class="star"></text>英语： 
+      </view>
+      <input></input>
+    </view>
+    <view  class="row_wrap">
+      <view class="txt">
+        <text class="star">* </text>电话： 
+      </view>
+      <input></input>
+    </view>
+    <view  class="row_wrap">
+      <view class="txt">
+        <text class="star"></text> QQ： 
+      </view>
+      <input></input>
+    </view>
+  </view>
+  <view class="init_course">
+    <view class="init_title">意向培训课程</view>
+    <view class="course_name">
+      <view class="course_item item_on">心理咨询师</view>
+      <view class="course_item">心理咨询师</view>
+      <view class="course_item">心理咨询师</view>
+      <view class="course_item">心理咨询师</view>
+      <view class="course_item">心理咨询师</view>
+    </view>
+  </view>
+</view>

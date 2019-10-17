@@ -1,0 +1,202 @@
+<view id="home">
+  <!-- 顶部 -->
+  <view class="top">
+    <input placeholder="搜索学员姓名/手机号" class="searchIpt"></input>
+    <image src="../../images/search-grey.png" class="searchImg"></image>
+    
+    <!-- 待处理信息 -->
+    <view class="msgTitle">待处理任务：</view>
+    <view class="message">
+      <view>
+        新客户
+        <view class="num">{{count.newCustomer}}人</view>
+      </view>
+      <view>
+        邮寄信息
+        <view class="num">{{count.newReceipt}}条</view>
+      </view>
+      <view>
+        财务信息
+        <view class="num">{{count.newPay}}条</view>
+      </view>
+      <view>
+        分期提醒
+        <view class="num">{{count.stagePay}}条</view>
+      </view>
+    </view>
+    <!-- 待处理信息end -->
+
+    <!-- 业绩卡片 --> 
+    <scroll-view class="yeji_card" scroll-x="true">
+      <view class="yeji_wrap">
+        <view class="card_item">
+          <view class="yeji_top clearfix">
+            <view class="fl yeji_title">本周业绩</view>
+            <view class="fr yeji_percent">124%</view>
+          </view>
+          <progress percent="60" active activeColor="#744EF7" class="progress" border-radius="100"></progress>
+          <view class="clearfix">
+            <view class="fl targetA">1200</view>
+            <view class="fr targetB">8000</view>
+          </view>
+        </view>
+        <view class="card_item">
+          <view class="yeji_top clearfix">
+            <view class="fl yeji_title">部门周业绩</view>
+            <view class="fr yeji_percent depart">124%</view>
+          </view>
+          <progress percent="60" active activeColor="#744EF7" class="progress" border-radius="100"></progress>
+          <view class="clearfix">
+            <view class="fl targetA">1200</view>
+            <view class="fr targetB">8000</view>
+          </view>
+        </view>
+        <view class="card_item">
+          <view class="yeji_top clearfix">
+            <view class="fl yeji_title">本月业绩</view>
+            <view class="fr yeji_percent">124%</view>
+          </view>
+          <progress percent="60" active activeColor="#744EF7" class="progress" border-radius="100"></progress>
+          <view class="clearfix">
+            <view class="fl targetA">1200</view>
+            <view class="fr targetB">8000</view>
+          </view>
+        </view>
+        <view class="card_item">
+          <view class="yeji_top clearfix">
+            <view class="fl yeji_title">部门月业绩</view>
+            <view class="fr yeji_percent depart">124%</view>
+          </view>
+          <progress percent="60" active activeColor="#744EF7" class="progress" border-radius="100"></progress>
+          <view class="clearfix">
+            <view class="fl targetA">1200</view>
+            <view class="fr targetB">8000</view>
+          </view>
+        </view>
+        <view class="card_item">
+          <view class="yeji_top clearfix">
+            <view class="fl yeji_title">本年业绩</view>
+            <view class="fr yeji_percent">124%</view>
+          </view>
+          <progress percent="60" active activeColor="#744EF7" class="progress" border-radius="100"></progress>
+          <view class="clearfix">
+            <view class="fl targetA">1200</view>
+            <view class="fr targetB">8000</view>
+          </view>
+        </view>
+        <view class="card_item">
+          <view class="yeji_top clearfix">
+            <view class="fl yeji_title">部门年业绩</view>
+            <view class="fr yeji_percent depart">124%</view>
+          </view>
+          <progress percent="60" active activeColor="#744EF7" class="progress" border-radius="100"></progress>
+          <view class="clearfix">
+            <view class="fl targetA">1200</view>
+            <view class="fr targetB">8000</view>
+          </view>
+        </view>  
+      </view>
+    </scroll-view>
+    <!-- 业绩卡片end -->
+  </view>
+  <!-- 顶部end -->
+
+
+  <!-- 消息导航 -->
+  <view class="nav_wrap {{nav==true?'nav_top':''}}">
+    <view class="nav">
+      <view class="nav_item {{num==0?'nav_on':''}}" data-idx="0" bindtap="toggle">待处理</view>
+      <view class="nav_item {{num==1?'nav_on':''}}" data-idx="1" bindtap="toggle">新客户</view>
+      <view class="nav_item {{num==2?'nav_on':''}}" data-idx="2" bindtap="toggle">邮寄信息</view>
+      <view class="nav_item {{num==3?'nav_on':''}}" data-idx="3" bindtap="toggle">财务信息</view>
+      <view class="nav_item {{num==4?'nav_on':''}}" data-idx="4" bindtap="toggle">分期提醒</view>
+    </view>
+  </view>
+  <!-- 消息导航end -->
+
+
+  <!-- 消息卡片 -->
+  <view class="msg_card">
+    <view class="card_title clearfix">
+      <view class="fl sub_title">新分配客户</view>
+      <view class="fr" bindtap="detail">查看详情</view>
+    </view>
+    <view class="date">2019</view>
+    <view class="client_msg clearfix">
+      <view class="fl">客户：<text class="name">赵丽</text></view>
+      <view class="fl">手机：<text class="phone">13545525451</text></view>
+    </view>
+    <view class="mark clearfix">
+      <view class="mark_title">意向培训课程:</view>
+      <text class="mark_content fl">产后康复师</text>
+      <text class="mark_content fl">小儿推拿</text>
+      <text class="mark_content fl">健康管理师</text>
+    </view>
+  </view>
+  <view class="msg_card">
+    <view class="card_title clearfix">
+      <view class="fl sub_title">教材已寄出</view>
+      <view class="fr">查看详情</view>
+    </view>
+    <view class="date">2019</view>
+    <view class="client_msg clearfix">
+      <view class="fl">客户：<text class="name">赵丽</text></view>
+      <view class="fl">手机：<text class="phone">13545525451</text></view>
+    </view>
+    <view class="mark clearfix">
+      <view class="mark_title">顺丰快递:</view>
+      <text class="mark_content fl">165441345325434585</text>
+    </view>
+  </view>
+  <view class="msg_card">
+    <view class="card_title clearfix">
+      <view class="fl sub_title">财务审核通过</view>
+      <view class="fr">查看详情</view>
+    </view>
+    <view class="date">2019</view>
+    <view class="client_msg clearfix">
+      <view class="fl">客户：<text class="name">赵丽</text></view>
+      <view class="fl">手机：<text class="phone">13545525451</text></view>
+    </view>
+    <view class="course_msg clearfix">课程：<text class="course_name">国际泌乳顾问</text></view>
+    <view class="mark clearfix">
+      <view class="mark_title">缴费金额:</view>
+      <text class="mark_content fl">2000元(分期)</text>
+    </view>
+  </view>
+  <view class="msg_card">
+    <view class="card_title clearfix">
+      <view class="fl sub_title">财务审核失败</view>
+      <view class="fr">查看详情</view>
+    </view>
+    <view class="date">2019</view>
+    <view class="client_msg clearfix">
+      <view class="fl">客户：<text class="name">赵丽</text></view>
+      <view class="fl">手机：<text class="phone">13545525451</text></view>
+    </view>
+    <view class="course_msg clearfix">课程：<text class="course_name">国际泌乳顾问</text></view>
+    <view class="mark clearfix">
+      <view class="mark_title">失败原因:</view>
+      <text class="mark_content fl">审核后发现实际缴费金额为16000元</text>
+    </view>
+  </view>
+  <view class="msg_card">
+    <view class="card_title clearfix">
+      <view class="fl sub_title">分期记录提醒</view>
+      <view class="fr">查看详情</view>
+    </view>
+    <view class="date">2019</view>
+    <view class="client_msg clearfix">
+      <view class="fl">客户：<text class="name">赵丽</text></view>
+      <view class="fl">手机：<text class="phone">13545525451</text></view>
+    </view>
+    <view class="course_msg clearfix">课程：<text class="course_name">国际泌乳顾问</text></view>
+    <view class="mark clearfix">
+      <view class="mark_title">分期记录:</view>
+      <text class="mark_content fl">剩余金额：1600元</text>
+      <text class="mark_content fl">总金额：20000元</text>
+    </view>
+  </view>
+  <!-- 消息卡片end -->
+
+</view>

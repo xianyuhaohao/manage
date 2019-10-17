@@ -1,0 +1,9 @@
+<!--pages/login/login.wxml-->
+<view id="login">
+  <view class="login_title">登录</view>
+  <view class="login_ipt">
+    账号 <input placeholder="请输入账号"></input>
+    密码 <input placeholder="请输入密码" type="password"></input>
+  </view>
+  <button class="login_btn">登录</button>
+</view>

@@ -1,0 +1,25 @@
+/* pages/fenqi/fenqi.wxss */
+.client_info{
+  padding: 50rpx 40rpx;
+  margin-bottom: 20rpx;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 16px 16px 0px rgba(86, 64, 247, 0.06);
+}
+.row_wrap{
+  display: flex;
+  margin-bottom: 30rpx;
+  align-items: center;
+  color:#646476;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.row_wrap .txt{
+  width: 180rpx;
+  text-align: right;
+}
+.row_wrap input{
+  width: 100%;
+}
+.star{
+  color:red;
+}

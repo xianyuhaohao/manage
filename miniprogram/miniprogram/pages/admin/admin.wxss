@@ -1,0 +1,71 @@
+/* pages/admin/admin.wxss */
+#admin{
+  background: #FAFAFE; 
+}
+.top{
+  background: #744EF7;
+  padding:40rpx;
+}
+.searchIpt{
+  background: #fff;
+  padding: 26rpx 0 26rpx 100rpx;
+  border-radius: 15rpx;
+}
+.searchImg{
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+  top: -67rpx;
+  left: 48rpx;
+}
+.msgTitle{
+  font-size: 34rpx;
+  color: #fff;
+}
+.dist_card{
+  background: #fff;
+  padding: 40rpx;
+  margin: 20rpx 0;
+  color: #646476;
+  font-size: 26rpx;
+}
+.row{
+  margin-bottom: 30rpx;
+}
+.client{
+  color:#444452;
+  font-size: 28rpx;
+}
+.client_name{
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.date{
+  font-size: 22rpx;
+  color: #9494AF;
+}
+.mark_content{
+  color:#444452;
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-right: 30rpx;
+}
+.mark{
+  background: #FAFAFE;
+  padding: 30rpx;
+  color: #2f2f72;
+  font-size: 20rpx;
+  margin-bottom: 30rpx;
+}
+.mark_title{
+  color: #9494AF;
+  font-size: 22rpx;
+  line-height: 40rpx;
+}
+.dist{
+  color: #7853F9;
+  font-size: 26rpx;
+  padding:30rpx 0 0;
+  text-align: center;
+  border-top: 1px solid #EFEFF8;
+}

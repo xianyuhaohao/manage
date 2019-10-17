@@ -1,0 +1,36 @@
+/* pages/invoiceApply/invoiceApply.wxss */
+.apply_show{
+  padding: 0 40rpx;
+  background: #fff;
+}
+.apply_wrap{
+  padding:50rpx 0;
+  border-top: 1px solid #EFEFF8;
+  font-size: 24rpx;
+  color:#646476;
+}
+.title_wrap{
+  color: #444452;
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 50rpx;
+}
+.cancel{
+  color: #744EF7;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+.invoice{
+  margin-bottom: 50rpx;
+}
+.invoice text{
+  padding: 20rpx;
+}
+.invoice_on{
+  color: #fff;
+  background: #744EF7;
+  border-radius: 10rpx;
+}
+.invoice_ipt{
+  font-weight: bold;
+}

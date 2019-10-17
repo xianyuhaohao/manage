@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/admin/admin",
+		"pages/login/login",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/courseInfo/courseInfo",
+    "pages/fenqi/fenqi",
+    "pages/edit/edit",
+    "pages/chengjiao/chengjiao",
+    "pages/invoiceApply/invoiceApply"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#744EF7",
+    "navigationBarTitleText": "后台管理系统",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#333",
+		"enablePullDownRefresh":true
+  },
+  "sitemapLocation": "sitemap.json"
+}

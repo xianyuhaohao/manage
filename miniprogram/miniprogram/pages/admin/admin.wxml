@@ -1,0 +1,37 @@
+<!--pages/admin/admin.wxml-->
+<view id="admin">
+  <view class="top">
+    <input placeholder="搜索学员姓名/手机号" class="searchIpt"></input>
+    <image src="../../images/search-grey.png" class="searchImg"></image>
+    <view class="msgTitle">未分配人数：{{total}}人</view>
+  </view>
+  <scroll-view scroll-y="true" style="height:800rpx;" bindscrolltolower="bottom">
+    <view class="distribute">
+        <block wx:for="{{list}}">
+          <view class="dist_card">
+            <view class="row clearfix">
+              <view class="client fl"><text class="client_name">{{item.name}}</text> / {{item.sex==1?'男':'女'}}</view>
+              <text class="date fr">{{item.create_time}}</text>
+            </view>
+            <view  class="row clearfix">
+              <view class="fl">
+                <text>陕西省</text>
+                <text> | </text>
+                <text>外科</text>
+                <text> | </text>
+                <text>5年</text>
+              </view>
+              <view class="fr">{{item.phone}}</view>
+            </view>
+            <view class="row">出国意向：{{item.abroad}}</view>
+            <view class="row mark clearfix">
+              <view class="mark_title">意向培训课程:</view>
+              <text class="mark_content fl">{{item.int_course}}</text>
+            </view>
+            <view class="dist">分配客户</view>
+          </view>
+        </block>
+    </view>
+  </scroll-view>
+
+</view>

@@ -1,0 +1,155 @@
+/**index.wxss**/
+#home{
+  background: #FAFAFE ;
+}
+.top{
+  background: #744EF7;
+  padding:40rpx 40rpx 0;
+}
+.searchIpt{
+  background: #fff;
+  padding: 26rpx 0 26rpx 100rpx;
+  border-radius: 15rpx;
+}
+.searchImg{
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+  top: -67rpx;
+  left: 48rpx;
+}
+.msgTitle{
+  font-size: 34rpx;
+  color: #fff;
+  margin-bottom: 40rpx;
+}
+.message{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 24rpx;  
+}
+.yeji_card{
+  position: relative;
+  bottom: -70rpx;
+  margin-bottom: 90rpx;
+}
+.yeji_wrap{
+  width:1110px;
+  display: flex;
+  flex-direction: row;
+}
+.card_item{
+  
+  width: 300rpx;
+  height: 116rpx;
+  margin-right: 30rpx;
+  border-radius:6px;
+  padding: 20rpx;
+  font-size: 28rpx;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0rpx 16rpx 16rpx 0rpx rgba(86, 64, 247, 0.06);
+}
+.num{
+  font-size: 34rpx;
+  color: #fff;
+}
+.nav_wrap{
+  padding: 0 40rpx;
+  background: #FAFAFE;
+}
+.nav_top{
+  position: fixed;
+  left: 0;
+  top:0;
+  right: 0;
+  margin-bottom: 30rpx;
+}
+.nav{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  color: #444452;
+  font-size: 26rpx;  
+}
+.nav_item{
+  padding: 20rpx 0;
+}
+.nav_on{
+  color:#744EF7;
+  font-weight: bold;
+  border-bottom: 6rpx solid #744EF7;
+}
+.msg_card{
+  width: 690rpx;
+  padding:30rpx;
+  margin-bottom: 20rpx;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 16px 16px 0px rgba(86, 64, 247, 0.06);
+}
+.card_title{
+  padding: 20rpx 0;
+  color:#9494AF;
+  font-size: 26rpx;
+}
+.sub_title{
+  color: #32A9FF;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.date{
+  color: #9494AF;
+  font-size: 20rpx;
+  margin-bottom: 30rpx;
+}
+.client_msg,.course_msg{
+  color:#646476;
+  font-size: 26rpx;
+  margin-bottom: 40rpx;
+}
+.name,.phone,.course_name,.mark_content{
+  color:#444452;
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-right: 30rpx;
+}
+.mark{
+  background: #FAFAFE;
+  padding: 30rpx;
+  color: #2f2f72;
+  font-size: 20rpx;
+  margin-bottom: 20rpx;
+}
+.mark_title{
+  color: #9494AF;
+  font-size: 20rpx;
+  line-height: 40rpx;
+}
+.yeji_top{
+  margin-bottom: 20rpx;
+}
+.yeji_title{
+  color:#444452;
+  font-size: 24rpx;
+}
+.yeji_percent{
+  font-size: 36rpx;
+  color: #744EF7;
+  font-weight: bold;
+}
+.depart{
+  color:#FF5151;
+}
+.progress{
+  width:100%;
+  margin-bottom: 20rpx;
+}
+.targetA{
+  font-size: 20rpx;
+  color:#744EF7;
+}
+.targetB{
+  font-size: 20rpx;
+  color: #F7974E;
+}

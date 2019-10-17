@@ -1,0 +1,233 @@
+<!--pages/detail/detail.wxml-->
+<view id="detail">
+  <view class="top">
+    <view class="client">赵丽<text class="gender"> /女士</text></view>
+  </view>
+  <!-- 客户信息卡片 -->
+  <view class="card_wrap">
+    <view class="client_card">
+      <view class="clearfix">
+        <text>陕西省</text>
+        <text> | </text>
+        <text>大专</text>
+        <text> | </text>
+        <text>工作5年</text>
+        <text> | </text>
+        <text>雅思6.0</text>
+        <view class="edit fr" bindtap="edit">编辑</view>
+      </view>
+      <view class="contact">
+        <text class="phone">1354354125</text>
+        <text>165451545</text>
+      </view>
+      <view class="mark clearfix" wx:if="{{false}}">
+        <view class="mark_title">意向培训课程:</view>
+        <text class="mark_content fl">产后康复师</text>
+        <text class="mark_content fl">小儿推拿</text>
+        <text class="mark_content fl">健康管理师</text>
+      </view>
+    </view>
+  </view>
+  <!-- 客户信息卡片end -->
+
+  <!-- 已完成课程 -->
+  <view class="done_course" wx:if="{{infoShow==true}}">
+    <view class="course_title">已完成课程</view>
+    <scroll-view class="course_card" scroll-x="true">
+      <view class="course_wrap">
+        <view class="card_item" bindtap="courseInfo">
+          <view class="course_name">护理管理师</view>
+          <view>2019</view>
+        </view> 
+        <view class="card_item">
+          <view class="course_name">护理管理师</view>
+          <view>2019</view>
+        </view>
+        <view class="card_item">
+          <view class="course_name" class="course_name">护理管理师</view>
+          <view>2019</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 已完成课程end -->
+
+
+  <!-- 课程信息 -->
+  <view class="courseInfor_wrap" wx:if="{{infoShow==false}}">
+      <include src="../courseInfo/courseInfo.wxml"/>      <!-- 引用课程信息 -->
+  </view>
+  <!-- 课程信息end -->
+
+  <!-- 订单状态 -->
+  <view class="order"  wx:if="{{infoShow==true}}">
+    <view class="order_detail">
+      <!-- 分期中状态 -->
+      <view wx:if="{{second==true}}">
+        <view class="order_wrap">
+          <view class="fenqizhong">分期中</view>
+          <view class="order_course">健康管理师</view>
+          <view class="fenqi_content">
+            <view>全部费用：<text>2000</text></view>
+            <view>代缴费用：<text>2000</text></view>
+            <view>合作老师：<text>张三</text></view>
+            <view>提成比例：<text>40%</text></view>
+          </view>
+        </view>
+        <view class="record">
+          <view class="record_title">缴费记录</view>
+          <view class="record_content clearfix">
+            <view class="fl">
+              <view>2000元</view>
+              <view class="date">2019</view>
+            </view>
+            <view class="fr">查看凭证</view>
+          </view>
+          <view class="record_content clearfix">
+            <view class="fl">
+              <view>2000元</view>
+              <view class="date">2019</view>
+            </view>
+            <view class="fr">查看凭证</view>
+          </view>
+          <view class="record_content clearfix">
+            <view class="fl">
+              <view>2000元</view>
+              <view class="date">2019</view>
+            </view>
+            <view class="fr">查看凭证</view>
+          </view>
+        </view>
+        <view class="fenqi_ipt">
+          <view  class="row_wrap">
+            <view class="txt">
+              <text class="star">* </text>本次缴费金额 
+            </view>
+            <input class="ipt"></input>
+          </view>
+          <view  class="row_wrap">
+            <view class="txt">
+              <text class="star">* </text>本次缴费日期 
+            </view>
+            <picker mode="date">
+              <view class="ipt picker"></view>
+            </picker>
+          </view>
+          <view  class="row_wrap">
+            <view class="txt">
+              <text class="star">* </text>本次缴费方式 
+            </view>
+            <picker>
+              <view class="ipt picker"></view>
+            </picker>
+          </view>
+          <view  class="row_wrap">
+            <view class="txt">
+              <text class="star">* </text>支付凭证 
+            </view>
+            <input class="ipt"></input>
+          </view>
+          <view  class="row_wrap">
+            <view class="txt">
+              <text class="star">* </text>下次缴费提醒 
+            </view>
+            <picker mode="date">
+              <view class="ipt picker"></view>
+            </picker>
+          </view>
+          <view  class="row_wrap">
+            <view class="txt">
+              <text class="star"></text> 合作老师 
+            </view>
+            <picker>
+              <view class="ipt picker"></view>
+            </picker>
+          </view>
+          <view  class="row_wrap">
+            <view class="txt">
+              <text class="star"></text> 负责人提成比例 
+            </view>
+            <picker>
+              <view class="ipt picker"></view>
+            </picker>
+          </view>
+          <view  class="row_wrap">
+            <view class="txt">
+              <text class="star"></text> 备注 
+            </view>
+            <input class="ipt"></input>
+          </view>
+          <view  class="row_wrap">
+            <view class="txt">
+              <text class="star"></text> 收货人姓名 
+            </view>
+            <input class="ipt"></input>
+          </view>
+          <view  class="row_wrap">
+            <view class="txt">
+              <text class="star"></text> 收货人手机号 
+            </view>
+            <input class="ipt"></input>
+          </view>
+          <view  class="row_wrap">
+            <view class="txt">
+              <text class="star"></text> 收货人地址 
+            </view>
+            <input class="ipt"></input>
+          </view>
+          <view class="agree clearfix">
+            <view class="checkImg fl">
+              <image
+                src="../../images/check-on.png"
+                bindtap="mail"
+                hidden="{{!mailcheck}}"
+              />
+              <image
+                src="../../images/check-off.png"
+                bindtap="mail"
+                hidden="{{mailcheck}}"
+              />
+            </view>
+            <view class="mail_check fl">邮寄合同 / 教材</view>
+          </view>
+        </view>
+      </view>
+      <!-- 分期中状态end -->
+
+
+      <!-- 可选状态 -->
+      <view class="order_wrap">
+        <picker value="{{index}}" range="{{array}}" bindchange="state">
+          <view class="state {{index==0?'genjin':''}} {{index==1?'fenqi':''}} {{index==2?'chengjiao':''}}">
+            {{array[index]}}
+          </view>
+        </picker>
+        
+        <view class="order_info">
+          <view  class="remarks" wx:if="{{index==0||index==3||index==4}}">
+            <view class="txt">
+              备注： 
+            </view>
+            <input></input>
+          </view>
+          <include src="../fenqi/fenqi.wxml" wx:if="{{index==1}}"/>     <!-- 引用分期状态 -->
+          <include src="../chengjiao/chengjiao.wxml" wx:if="{{index==2}}"/>    <!-- 引用成交状态 -->
+        </view>
+      </view>
+      <!-- 可选状态end -->
+
+      <!-- 发票申请 -->
+      <view class="apply" wx:if="{{invoice==false && index==1||index==2 }}" bindtap="apply">
+        增加发票申请
+      </view>
+      <include src="../invoiceApply/invoiceApply.wxml" wx:if="{{invoice==true}}"/>  <!-- 引用发票申请 -->
+      <!-- 发票申请end -->
+    </view>
+  </view>
+  <!-- 订单状态end -->
+  <view class="submit">
+    <button class="sub_btn">提交</button>  
+  </view>
+
+  
+</view>

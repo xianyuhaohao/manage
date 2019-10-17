@@ -1,0 +1,43 @@
+<!--pages/invoiceApply/invoiceApply.wxml-->
+<view>
+  <view class="apply_show">
+    <view class="apply_wrap">
+      <view class="title_wrap clearfix">
+        <text class="apply_title">发票申请单</text>
+        <text class="cancel fr" bindtap="cancle">取消发票申请</text>
+      </view>
+      <view class="invoice">
+        <text class="{{on==0?'invoice_on':''}}" bindtap="on=0">增值税专用发票</text>
+        <text class="{{on==1?'invoice_on':''}}" bindtap="on=1">企业发票</text>
+        <text class="{{on==2?'invoice_on':''}}" bindtap="on=2">个人发票</text>            
+      </view>
+      <view class="invoice_ipt">
+        <view  class="row_wrap">
+          <view class="txt">
+            <text class="star">* </text> 申请单位全称 
+          </view>
+          <input class="ipt"></input>
+        </view>
+        <view  class="row_wrap">
+          <view class="txt">
+            <text class="star">* </text> 纳税人识别号 
+          </view>
+          <input class="ipt"></input>
+        </view>
+        <view  class="row_wrap">
+          <view class="txt">
+            <text class="star"></text> 开户银行 
+          </view>
+          <input class="ipt"></input>
+        </view>
+        <view  class="row_wrap">
+          <view class="txt">
+            <text class="star"></text> 开户账号 
+          </view>
+          <input class="ipt"></input>
+        </view>
+        
+      </view>
+    </view>
+  </view>
+</view>

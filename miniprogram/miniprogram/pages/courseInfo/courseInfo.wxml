@@ -1,0 +1,76 @@
+<!--pages/courseInfo/courseInfo.wxml-->
+<view>
+
+  <view id="courseInfo">
+    <view class="course"> 
+      <view class="info_title">课程信息</view>
+      <view class="info_name">护理管理师</view>
+      <view class="info_content">
+        <view>全部费用：<text>2000</text></view>
+        <view>代缴费用：<text>2000</text></view>
+        <view>合作老师：<text>张三</text></view>
+        <view>提成比例：<text>40%</text></view>
+      </view>
+    </view>
+    <view class="pay">
+      <view class="info_title">缴费信息</view>
+      <view class="pay_wrap clearfix">
+        <view>
+          <view class="money">缴费金额：13000元</view>
+          <view class="date">2019</view>
+        </view>
+        <view class="fr">
+          <!-- <image src=""></image> -->
+        </view>
+      </view>
+    </view>
+    <view class="mail">
+      <view class="info_title">邮寄信息</view>
+      <view>收货人姓名：<text>王芳芳</text></view>
+      <view>收货人手机：<text>15341545</text></view>
+      <view>收货人地址：<text>北京是通州区</text></view>
+    </view>
+    <view class="invoice">
+      <view class="apply_show">
+        <view class="apply_wrap">
+          <view class="title_wrap clearfix">
+            <text class="apply_title fl">发票申请单</text>
+            <text class="cancel fr" bindtap="cancle">取消发票申请</text>
+          </view>
+          <view class="invoice">
+            <text class="{{course_on==0?'invoice_on':''}}" data-idx="0" bindtap="courseOn">增值税专用发票</text>
+            <text class="{{course_on==1?'invoice_on':''}}" data-idx="1" bindtap="courseOn">企业发票</text>
+            <text class="{{course_on==2?'invoice_on':''}}" data-idx="2" bindtap="courseOn">个人发票</text>
+          </view>
+          <view class="invoice_ipt">
+            <view class="row_wrap">
+              <view class="txt">
+                <text class="star">* </text>申请单位全称
+              </view>
+              <input class="ipt"></input>
+            </view>
+            <view class="row_wrap">
+              <view class="txt">
+                <text class="star">* </text>纳税人识别号
+              </view>
+              <input class="ipt"></input>
+            </view>
+            <view class="row_wrap">
+              <view class="txt">
+                <text class="star"></text>开户银行
+              </view>
+              <input class="ipt"></input>
+            </view>
+            <view class="row_wrap">
+              <view class="txt">
+                <text class="star"></text>开户账号
+              </view>
+              <input class="ipt"></input>
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
